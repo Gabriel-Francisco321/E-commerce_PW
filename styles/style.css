@@ -5,7 +5,10 @@
     box-sizing: border-box;
 }
 
-/* === ESTILOS GERAIS === */
+/* 
+==========================================================================
+                       === ESTILOS GERAIS === 
+*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -28,12 +31,84 @@ a{
 }
 
 .p-standard{
-    color: rgba(0, 0, 0, 0.911);
+    color: #111720de;
     font-size: 18px;
     line-height: 1.5;
 }
 
-/* === ESTILOS DO HEADER */
+/* BOTÕES */
+.btn{
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.397);
+}
+
+.btn-primary{
+    background-color: rgba(0, 0, 255, 0.753);
+    border: 1px solid blue;
+}
+
+.btn-secoundary{
+    background-color: rgba(255, 255, 255, 0.199);
+    border: 1px solid white;
+}
+
+/* Cards (DESTAQUES/DEPOIMENTOS) */
+.section-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.desc-top{
+    font-size: 30px;
+    color: #111720f0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
+    transition: 0.5s;
+}
+
+.grid-card:hover{
+    transform: scale(1.03);
+}
+
+.grid-card>p{
+    margin-top: 15px;
+}
+
+.card-title{
+    font-size: 19px;
+    color: #111720f0;
+}
+
+
+
+/* 
+==========================================================================
+                        === ESTILOS DO HEADER ===
+ */
 header{
     background-color: white;
 }
@@ -59,7 +134,7 @@ header{
 
 .nav-link{
     transition: 0.5s;
-    color: black;
+    color: #111720f0;
     font-weight: bold;
 }
 
@@ -88,13 +163,17 @@ header{
 
 .cart-count {
     font-size: 16px;
-    color: black;
+    color: #111720;
     background-color: salmon;
     border-radius: 50%;
     padding: 4px 8px;
 }
 
-/* === ESTILOS DO HERO === */
+
+/* 
+==========================================================================
+    === ESTILOS DA SESSÃO HERO ===
+ */
 
 .hero{
     background: linear-gradient(135deg, #6366F1, salmon);
@@ -130,29 +209,6 @@ header{
     padding: 20px;
 }
 
-.btn{
-    padding: 15px 20px;
-    color: white;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.btn:hover{
-    transform: translateY(-5px);
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.397);
-}
-
-.btn-primary{
-    background-color: rgba(0, 0, 255, 0.753);
-    border: 1px solid blue;
-}
-
-.btn-secoundary{
-    background-color: rgba(255, 255, 255, 0.199);
-    border: 1px solid white;
-}
-
 .hero-right{
     flex-basis: 40%;
 }
@@ -162,53 +218,20 @@ header{
     border-radius: 30px;
 }
 
-/* === ESTILOS DOS DETAQUES === */
+
+/*
+==========================================================================
+                === ESTILOS DA SESSÃO DE DETAQUES === 
+ */
 .destaques-container{
     padding: 50px 0;
 }
 
-.destaques-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    gap: 15px;
-    margin: 50px auto;
-    text-align: center;
-}
 
-.destaques-top>h3{
-    font-size: 30px;
-}
-
-.destaques-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.grid-card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
-    transition: 0.5s;
-}
-
-.grid-card:hover{
-    transform: scale(1.03);
-}
-
-.grid-card>p{
-    margin-top: 15px;
-}
-
-.card-title{
-    font-size: 19px;
-}
-
-/* === ESTILOS DAS COLEÇÕES === */
+/*
+==========================================================================
+                === ESTILOS DA SESSÃO DE COLEÇÕES === 
+*/
 .collection{
     background-color: white;
     padding: 20px 0;
@@ -221,21 +244,131 @@ header{
     gap: 20px;
 }
 
-.collection-left{
+/* lado esquerdo (COLEÇÕES/NEWSLETTER) */
+.section-left{
     flex-basis: 50%;
 }
 
-.collection-left>h2{
+.section-left>h2{
     margin-bottom: 20px;
 }
 
-.collection-left>p{
-    margin-bottom: 20px;
+.section-left>p{
+    margin-bottom: 30px;
 }
 
-.collection-right-grid{
+.collection-container>.grid-container{
     flex-basis: 50%;
+}
+
+
+/*
+==========================================================================
+                === ESTILOS SESSÃO DE DEPOIMENTOS === 
+*/
+.depoimento-container>.grid-container>.grid-card>.card-title{
+    margin-top: 15px;
+}
+
+/*
+==========================================================================
+                === ESTILOS SESSÃO NEWSLETTER === 
+*/
+.newsletter-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
+    margin: 70px auto;
+    gap: 20px;
+}
+
+.newsletter-container>.section-left{
+    flex-basis: 60%;
+}
+
+.form{
+    flex-basis: 40%;
+}
+
+.form>form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.input-email{
+    border: 1px solid #111720b0;
+    font-size: 16px;
+}
+
+.input-sub{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*
+==========================================================================
+                === ESTILOS DO FOOTER === 
+*/
+.foot{
+    background-color: #111720;
+    color: white;
+}
+
+.foot-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.foot-grids{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    text-align: center;
+}
+
+.foot-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foot-grid>p{
+    line-height: 1.5;
+}
+
+.foot-links>li {
+    list-style: none;
+    line-height: 1.7;
+}
+
+.foot-link{
+    color: white;
+    transition: 0.5s;
+}
+
+.foot-link:hover{
+    color: salmon;
+}
+
+.email-link{
+    color: white;
+    transition: 0.5s;
+}
+
+.email-link:hover{
+    color: salmon;
 }
