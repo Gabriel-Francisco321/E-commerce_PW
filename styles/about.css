@@ -1,0 +1,54 @@
+/*
+==========================================================================
+                === ESTILOS DA SESSÃO NOSSA HISTÓRIA === 
+ */
+.history-container{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-left{
+    flex-basis: 50%;
+}
+
+.section-title{
+    margin-bottom: 25px;
+}
+
+.grid-card>.p-standard{
+    margin-top: 0;
+}
+
+.history-right{
+    flex-basis: 50%;
+}
+
+.history-right>ul{
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.comp{
+    color: #111720de;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/*
+==========================================================================
+                === ESTILOS DA SESSÃO MISSÃO === 
+ */
+.mission{
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
+}
+
+.mission-container{
+    text-align: center;
+    padding: 50px 0;
+}
