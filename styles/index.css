@@ -77,6 +77,8 @@
 /* lado esquerdo (COLEÇÕES/NEWSLETTER) */
 .section-left{
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-left>h2{
@@ -84,13 +86,16 @@
 }
 
 .section-left>p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.section-left>.btn{
+    width: 31%;
 }
 
 .collection-container>.grid-container{
     flex-basis: 50%;
 }
-
 
 /*
 ==========================================================================

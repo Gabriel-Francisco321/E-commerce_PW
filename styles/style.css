@@ -235,11 +235,11 @@ header{
     color: salmon;
 }
 
-.email-link{
+.contacts-link{
     color: white;
     transition: 0.5s;
 }
 
-.email-link:hover{
+.contacts-link:hover{
     color: salmon;
 }

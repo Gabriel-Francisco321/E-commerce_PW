@@ -17,6 +17,19 @@
     flex-basis: 50%;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.link-text{
+    color: #111720de;
+    transition: 0.5s;
+}
+
+.link-text:hover{
+    color: salmon;
+}
+
 .fale-right{
     flex-basis: 50%;
 }

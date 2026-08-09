@@ -1,0 +1,41 @@
+/* 
+==========================================================================
+    === ESTILOS DA SESSÃO HERO-COLEÇÃO ===
+ */
+
+.hero{
+    background: linear-gradient(135deg, #6366F1, salmon);
+    padding: 20px 0;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.hero-left{
+    flex-basis: 60%;
+}
+
+.left{
+    margin: 30px 0;
+    color: white;
+    font-size: 40px;
+}
+
+.hero-left>p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.hero-right{
+    flex-basis: 40%;
+}
+
+.hero-right>img{
+    width: 100%;
+    border-radius: 30px;
+}
