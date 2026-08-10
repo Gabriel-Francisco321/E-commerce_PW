@@ -1,9 +1,13 @@
+/* Adição das variáveis css */
+@import url("var.css");
+
 /*
 ==========================================================================
                 === ESTILOS DA SESSÃO NOSSA HISTÓRIA === 
  */
 .history-container{
-    padding: 50px 0;
+    margin-top: 100px;
+    padding: 50px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +36,8 @@
 }
 
 .comp{
-    color: #111720de;
-    font-size: 16px;
+    color: var(--text-color);
+    font-size: var(--text-size);
     line-height: 1.5;
 }
 

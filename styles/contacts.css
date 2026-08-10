@@ -1,9 +1,13 @@
+/* Adição das variáveis css */
+@import url("var.css");
+
 /*
 ==========================================================================
                 === ESTILOS DA SESSÃO FALE === 
  */
 .fale-container{
-    padding: 30px 0;
+    margin-top: 100px;
+    padding: 30px 20px;
 }
 
 .fale-area{
@@ -22,12 +26,12 @@
 }
 
 .link-text{
-    color: #111720de;
-    transition: 0.5s;
+    color: var(--text-color);
+    transition: var(--animation-time);
 }
 
 .link-text:hover{
-    color: salmon;
+    color: var(--primary-color);
 }
 
 .fale-right{
@@ -43,5 +47,4 @@
 
 #message{
     height: 120px;
-
 }
