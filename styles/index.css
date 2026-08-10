@@ -151,3 +151,60 @@
 ==========================================================================
                 === RESPONSIVIDADE === 
 */
+@media(max-width: 1000px){
+    .hero-container{
+        flex-direction: column;
+    }
+
+    .hero-right{
+        width: 85%;
+    }
+    .collection-container>.grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 850px){
+    .hero-container{
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .destaques-container>.grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .depoimento-container>.grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-container>.grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form{
+        width: 60%;
+    }
+}
+
+@media(max-width: 650px){
+    .destaques-container>.grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .depoimento-container>.grid-container{
+        grid-template-columns: 1fr;
+    }
+}

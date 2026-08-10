@@ -252,3 +252,21 @@ header{
 .contacts-link:hover{
     color: var(--primary-color);
 }
+
+/*
+==========================================================================
+                === RESPONSIVIDADE === 
+*/
+@media(max-width: 1000px){
+    .container{
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width: 850px){
+    .header-container{
+        flex-direction: column;
+        gap: 10px;
+        height: 200px;
+    }
+}
