@@ -1,8 +1,17 @@
-/* Adição das variáveis css */
-@import url("var.css");
+/* 
+==========================================================================
+                       === VARIÁVEIS === 
+*/
+:root{
+    --primary-color: salmon;
+    --secondary-color: #6366F1;
+    --text-color: #111720de;
+    --animation-time: 0.5s;
+    --text-size: 1.06rem;
+}
 
 /* Início remoção de estilos padrão */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,22 +21,22 @@
 ==========================================================================
                        === ESTILOS GERAIS === 
 */
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-input{
+input {
     padding: 15px;
     border-radius: 30px;
     border: 1px solid var(--text-color);
@@ -35,7 +44,7 @@ input{
     color: var(--text-color);
 }
 
-textarea{
+textarea {
     padding: 15px;
     border-radius: 30px;
     border: 1px solid var(--text-color);
@@ -43,20 +52,20 @@ textarea{
     color: var(--text-color);
 }
 
-.section-title{
+.section-title {
     color: var(--primary-color);
     font-size: 1.5625rem;
     text-transform: uppercase;
 }
 
-.p-standard{
+.p-standard {
     color: var(--text-color);
     font-size: var(--text-size);
     line-height: 1.5;
 }
 
 /* BOTÕES */
-.btn{
+.btn {
     padding: 15px 20px;
     color: white;
     font-weight: bold;
@@ -64,23 +73,23 @@ textarea{
     transition: var(--animation-time);
 }
 
-.btn:hover{
+.btn:hover {
     transform: translateY(-2px);
     text-shadow: 0 0 4px rgba(255, 255, 255, 0.397);
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--secondary-color);
     border: 1px solid rgba(0, 0, 255, 0.2);
 }
 
-.btn-secoundary{
+.btn-secoundary {
     background-color: rgba(255, 255, 255, 0.199);
     border: 1px solid white;
 }
 
 /* Cards (DESTAQUES/DEPOIMENTOS) */
-.section-top{
+.section-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,12 +99,12 @@ textarea{
     text-align: center;
 }
 
-.desc-top{
+.desc-top {
     font-size: 1.5625rem;
     color: var(--text-color);
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -109,15 +118,15 @@ textarea{
     transition: var(--animation-time);
 }
 
-.grid-card:hover{
+.grid-card:hover {
     transform: scale(1.02);
 }
 
-.grid-card>p{
+.grid-card>p {
     margin-top: 15px;
 }
 
-.card-title{
+.card-title {
     font-size: 1.09rem;
     color: var(--text-color);
 }
@@ -128,7 +137,7 @@ textarea{
 ==========================================================================
                         === ESTILOS DO HEADER ===
  */
-header{
+header {
     background-color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
     position: fixed;
@@ -138,20 +147,20 @@ header{
     width: 100%;
 }
 
-.header-container{
+.header-container {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.title>a{
+.title>a {
     color: var(--primary-color);
     font-size: 1.5625rem;
     font-style: italic;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 16px;
 }
@@ -160,17 +169,17 @@ header{
     list-style: none;
 }
 
-.nav-link{
+.nav-link {
     transition: var(--animation-time);
     color: var(--text-color);
     font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--primary-color);
 }
 
-.active{
+.active {
     color: var(--primary-color);
 }
 
@@ -201,32 +210,32 @@ header{
 ==========================================================================
                 === ESTILOS DO FOOTER === 
 */
-.foot{
+.foot {
     background-color: var(--text-color);
     color: white;
 }
 
-.foot-container{
+.foot-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.foot-grids{
+.foot-grids {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
 
-.foot-grid{
+.foot-grid {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.foot-grid>p{
+.foot-grid>p {
     line-height: 1.5;
 }
 
@@ -235,21 +244,27 @@ header{
     line-height: 1.9;
 }
 
-.foot-link{
+.foot-link {
     color: white;
     transition: var(--animation-time);
 }
 
-.foot-link:hover{
+.foot-link:hover {
     color: var(--primary-color);
 }
 
-.contacts-link{
+.foot-contactos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts-link {
     color: white;
     transition: var(--animation-time);
 }
 
-.contacts-link:hover{
+.contacts-link:hover {
     color: var(--primary-color);
 }
 
@@ -257,16 +272,48 @@ header{
 ==========================================================================
                 === RESPONSIVIDADE === 
 */
-@media(max-width: 1000px){
-    .container{
+@media(max-width: 1000px) {
+    .container {
         padding: 20px 50px;
     }
 }
 
-@media(max-width: 850px){
-    .header-container{
+@media(max-width: 850px) {
+    .header-container {
         flex-direction: column;
         gap: 10px;
         height: 200px;
+    }
+}
+
+@media(max-width: 600px) {
+    .foot-container {
+        padding: 20px 0;
+    }
+
+    .foot-grids {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .foot-grid {
+        gap: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(100, 148, 237, 0.253);
+    }
+
+    .foot-links {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .foot-contactos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,11 +1,8 @@
-/* Adição das variáveis css */
-@import url("var.css");
-
 /*
 ==========================================================================
                 === ESTILOS DA SESSÃO NOSSA HISTÓRIA === 
  */
-.history-container{
+.history-container {
     margin-top: 100px;
     padding: 50px 20px;
     display: flex;
@@ -14,28 +11,28 @@
     gap: 20px;
 }
 
-.history-left{
+.history-left {
     flex-basis: 50%;
 }
 
-.section-title{
+.section-title {
     margin-bottom: 25px;
 }
 
-.grid-card>.p-standard{
+.grid-card>.p-standard {
     margin-top: 0;
 }
 
-.history-right{
+.history-right {
     flex-basis: 50%;
 }
 
-.history-right>ul{
+.history-right>ul {
     list-style: circle;
     margin-left: 20px;
 }
 
-.comp{
+.comp {
     color: var(--text-color);
     font-size: var(--text-size);
     line-height: 1.5;
@@ -46,13 +43,30 @@
 ==========================================================================
                 === ESTILOS DA SESSÃO MISSÃO === 
  */
-.mission{
+.mission {
     background-color: white;
     margin-bottom: 30px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
 }
 
-.mission-container{
+.mission-container {
     text-align: center;
     padding: 50px 0;
+}
+
+@media (max-width: 850px) {
+
+    .history-container {
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .history-right {
+        width: 100%;
+    }
+
+    .mission-container {
+        padding: 50px 20px;
+    }
 }
